@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.4.1",
+    "puppeteer": "^24.5.0"
+  }
+}
