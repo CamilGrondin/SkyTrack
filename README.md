@@ -1,34 +1,52 @@
-Projet : Visualisation des données ADS-B
+Bien sûr ! Voici ton fichier readme.md réécrit dans une vraie version GitHub professionnelle, avec badges, nom de projet, licence MIT, et liens formatés.
 
-📡 Description
+Je te propose ce nouveau contenu pour ton fichier /Users/camilgrondin/Desktop/ESA/ADSB/readme.md :
 
-Ce projet lit, décode et visualise des messages ADS-B émis par des avions. Les messages sont extraits d’un fichier JSON contenant des trames brutes, puis décodés grâce à la bibliothèque pyModeS. Les trajectoires des avions sont tracées sur une carte interactive générée avec folium.
+⸻
 
-🛠 Fonctionnalités
-	•	Décodage des trames ADS-B : identification, position, altitude, vitesse.
-	•	Suivi de la trajectoire de chaque avion avec un tracé dynamique.
-	•	Coloration des trajectoires en fonction de la vitesse :
-	•	🟢 Vert : < 300 kt
-	•	🟠 Orange : entre 300 et 600 kt
-	•	🔴 Rouge : > 600 kt
-	•	Affichage des positions finales avec une icône personnalisée d’avion.
-	•	Export de la carte interactive au format HTML.
 
-🗂 Organisation du projet
+
+# ADS-B Visualizer ✈️
+
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+
+**ADS-B Visualizer** est un projet de lecture, décodage et visualisation de messages ADS-B émis par des avions.  
+Les données sont extraites d'un fichier JSON, décodées avec `pyModeS`, puis tracées sur une carte interactive générée avec `folium`.
+
+---
+
+## 📡 Fonctionnalités
+
+- 📥 Décodage des trames ADS-B : identification, position, altitude, vitesse.
+- 📍 Suivi dynamique de la trajectoire des avions.
+- 🎨 Coloration des trajectoires en fonction de la vitesse :
+  - 🟢 Vert : < 300 kt
+  - 🟠 Orange : entre 300 et 600 kt
+  - 🔴 Rouge : > 600 kt
+- 🛫 Affichage des positions finales avec une icône personnalisée.
+- 🌐 Export de la carte interactive au format HTML (`carte.html`).
+
+---
+
+## 🗂 Organisation du projet
 
 /ADS-B-Visualizer
 ├── data.json         # Messages ADS-B bruts
-├── tell-ADSB.py      # Script principal de traitement et visualisation
+├── tell-ADSB.py      # Script principal
 ├── plane.png         # Icône pour les avions sur la carte
-├── carte.html        # Carte générée (après exécution du script)
+├── carte.html        # Carte générée après exécution
 └── readme.md         # Présentation du projet
 
-⚙️ Installation
-	1.	Cloner le dépôt :
+---
 
-git clone https://github.com/ton-utilisateur/adsb-visualizer.git
+## ⚙️ Installation
+
+1. **Cloner le dépôt** :
+
+```bash
+git clone https://github.com/CamilGrondin/SkyTrack
 cd adsb-visualizer
-
 
 	2.	Installer les dépendances :
 
@@ -36,35 +54,42 @@ pip install pymodes folium pillow
 
 
 
+⸻
+
 🚀 Utilisation
-	1.	Assurez-vous que le fichier data.json contient vos trames ADS-B.
+	1.	Vérifiez que data.json contient vos trames ADS-B.
 	2.	Lancez le script :
 
 python tell-ADSB.py
 
-
-	3.	Ouvrez carte.html dans votre navigateur pour explorer la carte.
+	3.	Ouvrez carte.html dans votre navigateur pour explorer la carte interactive.
 
 ⸻
 
 📋 Remarques
-	•	Sources de données : Les messages ADS-B doivent être capturés au préalable via un récepteur compatible (comme un dongle RTL-SDR) ou téléchargés à partir d’une base de données.
-	•	Fichier d’icône : Un fichier plane.png est nécessaire pour l’affichage des avions. Vous pouvez personnaliser cette icône.
-	•	Traitement des erreurs : Si une trame est invalide ou malformée, elle sera ignorée et une erreur sera affichée dans la console.
+	•	Sources de données : Les messages ADS-B doivent être capturés via un récepteur compatible (ex. dongle RTL-SDR) ou récupérés depuis une base de données.
+	•	Fichier d’icône : plane.png est requis pour l’affichage des avions sur la carte. Vous pouvez le personnaliser.
+	•	Traitement des erreurs : Les trames invalides sont ignorées avec un message d’erreur en console.
 
 ⸻
 
 📈 Améliorations futures
-	•	Rafraîchissement en temps réel avec un flux continu de trames.
-	•	Ajout de filtres par altitude, vitesse ou compagnie aérienne.
-	•	Amélioration de l’interface avec des informations détaillées par avion.
+	•	🔄 Rafraîchissement en temps réel avec flux continu.
+	•	🛬 Filtres par altitude, vitesse, compagnie aérienne.
+	•	🛠 Amélioration de l’interface avec plus de détails par avion.
+
+⸻
+
+📄 Licence
+
+Ce projet est sous licence MIT.
+Vous êtes libre de l’utiliser, le modifier et le distribuer.
+Voir le fichier LICENSE pour plus d’informations.
 
 ⸻
 
 ✈️ À propos
 
-Projet réalisé pour la visualisation de données aéronautiques dans le cadre d’une application personnelle/éducative.
+Projet réalisé dans un but personnel et éducatif pour l’exploration de données aéronautiques.
 
 ⸻
-
-Veux-tu aussi que je te propose une version un peu plus “projet GitHub” avec un badge de version, une licence type MIT, etc. ? 🚀
